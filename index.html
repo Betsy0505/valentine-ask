@@ -1,41 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valentine letter</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Envelop Screen -->
     <div id="envelope-container">
-    <img src="./assets/envelope.png" alt="Envelope" id="envelope">
-    <p>❤️ Letter for You ❤️</p>
+      <img src="./assets/envelope.png" alt="Envelope" id="envelope" />
+      <p>❤️ Letter for You ❤️</p>
     </div>
 
     <!-- Letter Screen -->
     <div id="letter-container">
-        <div class="letter-window">
-            <div class="pixelart-to-css"></div>
-            <h1 id="letter-title">Will you be my Valentine?</h1>
+      <div class="letter-window">
+        <h1 id="letter-title">Will you be my Valentine?</h1>
 
-            <div id="heart_bunny" alt="Heart" class="bunny" id="bunny">
-
-            <div class="buttons" id="letter-buttons">
-                <img src="./assets/yes.png" alt="Yes" class="btn yes-btn">
-
-                <div class="no-wrapper">
-                    <img src="./assets/no.png" alt="No" class="btn no-btn">
-                </div>
-            </div>
-
-            <p id="final-text" class="final-text" style="display: none;">
-                <strong>Valentine Date</strong> See U at 7 PM on 14th Feb! <br>
-            </p>
-
-            <!-- <div id="bunny_dancing" alt="Heart" class="bunny_dancing" id="letter-bunny"> -->
-
+        <div class="bunny" id="letter-bunny">
+          <img
+            src="./assets/bunny_heart.gif"
+            alt="Bunny"
+            class="bunny-gif"
+            id="bunny-img"
+          />
         </div>
+
+        <div class="buttons" id="letter-buttons">
+          <img src="./assets/yes.png" alt="Yes" class="btn yes-btn" />
+          <div class="no-wrapper">
+            <img src="./assets/no.png" alt="No" class="btn no-btn" />
+          </div>
+        </div>
+
+        <img
+          src="./assets/sad_cat.jpg"
+          id="sad-cat-img"
+          style="display: none; width: 100px; position: absolute; z-index: 10"
+        />
+
+        <p id="final-text" class="final-text" style="display: none">
+          <strong>Valentine Date</strong> <br />
+          See U at 9 PM on 14th Feb!
+        </p>
+      </div>
     </div>
-</body>
+
+    <!-- video -->
+    <div id="celebration-container" style="display: none; flex-direction: column; align-items: center;">
+    <video id="celebration-video" width="350">
+        <source src="./assets/Sopa.mp4" type="video/mp4">
+    </video>
+    <h2 id="te-amo-text" style="margin-top: 15px; font-size: 30px; color: #ff4d6d; display: none;">
+        Te amo papoi owO
+    </h2>
+</div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
